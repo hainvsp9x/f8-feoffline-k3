@@ -1,0 +1,10 @@
+.container {
+  max-width: 50%;
+  margin: 5% auto 0;
+  background-color: #f6f7f9;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.up-case {
+  text-transform: uppercase;
+}

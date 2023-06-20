@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+.container {
+  max-width: 600px;
+  margin: 10% auto 0;
+  background-color: #f6f7f9;
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+.container i {
+  padding-top: 15px;
+}
+.container h2 {
+  padding: 20px 0;
+}
+.container input {
+  margin: 15px 0;
+}
+.container button {
+  display: block;
+  text-transform: uppercase;
+}
