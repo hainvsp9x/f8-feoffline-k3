@@ -1,0 +1,48 @@
+.contact-map #menu ul {
+  border: #868809 solid 1px;
+  list-style-type: none;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.contact-map #menu li {
+  width: 25%;
+  height: 40px;
+  display: inline-block;
+  margin-left: -5px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #868809;
+  display: block;
+  line-height: 40px;
+  display: ;
+}
+#menu a:hover {
+  background: #dadd07;
+  color: #333;
+}
+.info-map {
+  width: 100%;
+  height: 450px;
+}
+h1 {
+  padding-top: 40px;
+}
+.info-map #info {
+  background-color: #c2bebe;
+  width: 30%;
+  height: 100%;
+  padding-left: 40px;
+  margin-left: 20px;
+  float: left;
+  display: inline-block;
+}
+.info-map iframe {
+  height: 100%;
+  width: 60%;
+  float: left;
+}

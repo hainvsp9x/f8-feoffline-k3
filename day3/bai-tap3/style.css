@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f7f9;
+  height: 100vh;
+}
+form {
+  /* text-align: center; */
+  align-items: center;
+  margin: 40px;
+}
+form div label {
+  min-width: 100px;
+  display: inline-block;
+  min-width: 120px;
+}
+div {
+  margin-top: 20px;
+}
+.label-checkbox,
+.check-box {
+  display: inline-block;
+}
+button {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 3px 6px;
+}
+div + button {
+  margin-left: 120px;
+}

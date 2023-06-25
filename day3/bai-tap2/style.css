@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  margin: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+span {
+  display: block;
+  text-align: center;
+  width: 80px;
+  height: 4px;
+  margin: 10px auto;
+  background-color: #04a0ff;
+}
+.content-item {
+  width: 33.33%;
+  margin-top: 50px;
+  float: left;
+  padding: 30px;
+}
+img {
+  float: left;
+  border-radius: 100px;
+  width: 60px;
+}
+.title {
+  margin-left: 100px;
+}
+.title p {
+  padding-bottom: 10px;
+}

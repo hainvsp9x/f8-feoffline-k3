@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Username:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="city">City of <br />Eployment:</label>
+        <input type="text" name="city" id="city" />
+      </div>
+      <div>
+        <label for="server">Username:</label>
+        <select name="server" id="server">
+          <option value="">--Chose a server--</option>
+          <option value="1">viettel</option>
+          <option value="2">FPT</option>
+        </select>
+      </div>
+      <div>
+        <div class="label-checkbox">
+          <label for="specify">Please specify <br />your role:</label>
+        </div>
+
+        <div class="check-box">
+          <input type="checkbox" id="admin" name="admin" value="1" />
+          <label for="admin"> Admin</label><br />
+
+          <input type="checkbox" id="engineer" name="engineer" value="2" />
+          <label for="engineer"> Engineer</label><br />
+
+          <input type="checkbox" id="manager" name="manager" value="3" />
+          <label for="manager"> Manager</label><br />
+
+          <input type="checkbox" id="guest" name="guest" value="3" />
+          <label for="guest"> Guest</label>
+        </div>
+      </div>
+      <div>
+        <div class="label-checkbox">
+          <label for="specify">Single Sign-on<br />the following:</label>
+        </div>
+
+        <div class="check-box">
+          <input type="checkbox" id="email" name="email" value="4" />
+          <label for="email">Mail</label><br />
+
+          <input type="checkbox" id="payroll" name="payroll" value="5" />
+          <label for="payroll">Payroll</label><br />
+
+          <input type="checkbox" id="sefl" name="sefl" value="6" />
+          <label for="sefl"> Sefl-service</label><br />
+        </div>
+      </div>
+      <button type="submit">Login</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

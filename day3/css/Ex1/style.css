@@ -1,0 +1,4 @@
+.todo input:checked ~ span {
+  color: brown;
+  text-decoration: line-through;
+}

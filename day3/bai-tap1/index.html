@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .container {
+      padding: 20px;
+    }
+    .container > h2 {
+      text-transform: uppercase;
+    }
+    .container > h2 > span {
+      padding: 10px 0;
+      border-bottom: 3px solid #ffb83a;
+    }
+    table {
+      width: 800px;
+    }
+    tr > td {
+      padding-right: 50px;
+    }
+    .contact-info {
+      width: 200px;
+      padding-bottom: 180px;
+    }
+    .contact-info h3 {
+      margin-bottom: 10px;
+    }
+    .contact-info > p {
+      font-size: 15px;
+    }
+    .contact-info > p {
+      margin: 5px 0;
+    }
+    .contact-info > p > i {
+      padding-top: 10px;
+    }
+    .contact-info span {
+      display: inline-block;
+      padding-left: 20px;
+    }
+    textarea,
+    form input {
+      display: block;
+      margin-top: 10px;
+      width: 100%;
+    }
+    form button {
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2><span>con</span>tact us</h2>
+      <table>
+        <tr>
+          <td>
+            <div class="contact-info">
+              <h3>Contact Info</h3>
+              <p>
+                <i class="fa fa-map-marker"></i>
+                <span
+                  >321 Awesome Street <br />
+                  New York, NY 17022</span
+                >
+              </p>
+              <p>
+                <i class="fa fa-envelope"></i><span>Info@companyname.com</span>
+              </p>
+              <p><i class="fa fa-phone"></i><span>+ 1 800 123 1234</span></p>
+            </div>
+          </td>
+          <td>
+            <div class="contact-form">
+              <h3>Having Any Query! Or Book an appointment</h3>
+              <form action="">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Enter Email" />
+                <input type="text" placeholder="Subject" />
+                <textarea name="message" id="message" cols="30" rows="10">
+Message</textarea
+                >
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
