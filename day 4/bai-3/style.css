@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3em;
+}
+
+nav ul{
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: center;
+   
+}
+
+nav li{ 
+    display: inline-block;
+}
+
+nav a{  
+    height: 40px; 
+    line-height: 40px;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    background-color: rgb(228, 232, 235);
+    color: black;
+}
+nav a:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+nav a:active{
+    background-color: blue;
+    color: aliceblue;
+}
+
+.items{
+    margin-top: 60px;
+    height: 80px;
+    text-align: center;
+
+}
+.item{
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+
+.item ul{
+    margin-top: 40px;
+    list-style-type: none;
+}
+.item li{
+    margin-top: 10px;
+}
+.item li a{
+    text-decoration: none;
+    color: black;
+}
+.checked {
+    color: orange;
+  }
+
+.item #cart{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+}  
+.item #cart{
+    display: none;
+}
+.item:hover #cart {
+    display: block;
+}
+.item #item2{
+    display: none;
+}
+.item:hover #item2 {
+    display: block;
+}
+.item:hover #item1{
+    display: none;
+}
