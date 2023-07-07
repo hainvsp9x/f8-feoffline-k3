@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
 body {
   background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
   overflow: hidden;
+  font-family: "Nunito", sans-serif;
 }
 .container {
   position: relative;
@@ -36,6 +38,7 @@ body {
   padding: 8px 15px;
   border: none;
   border-radius: 2px;
+  color: #eb6355;
 }
 .icon {
   position: absolute;
@@ -64,16 +67,19 @@ body {
 }
 .icon-middle {
   position: absolute;
-  top: 48%;
+  width: 50px;
+  height: 50px;
+  top: 50%;
   left: 37.5%;
+  font-weight: 700;
   background-color: #ffffff;
-  color: black;
+  color: #da5b4f;
   padding: 15px;
-  border-radius: 60%;
+  border-radius: 50%;
   box-shadow: 1px 1px 1px 1px #666;
 }
 .form-right {
-  padding: 20px;
+  padding: 60px;
   text-align: center;
 }
 .form-right h2 {
@@ -93,11 +99,11 @@ body {
   display: flex;
 }
 .check-box input[type="checkbox"] {
-  margin-left: 40px;
+  /* margin-left: 5px; */
   margin-right: 8px;
 }
 .check-box label {
-  margin-right: 275px;
+  margin-right: 270px;
 }
 .form-right button {
   width: 100%;
@@ -108,4 +114,7 @@ body {
   color: #fff;
   border-radius: 3px;
   font-size: 18px;
+}
+.form-right button {
+  text-transform: uppercase;
 }
