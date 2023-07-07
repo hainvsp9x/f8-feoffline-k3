@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: lato;
+  src: url("./fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: Lobster;
+  src: url("./fonts/Lobster-Regular.ttf");
+}
+.main {
+  width: 80vw;
+  margin: 40px auto;
+  font-size: 18px;
+}
+.title-content {
+  font-family: Lobster;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.content {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+button,
+select,
+textarea,
+.large-form::placeholder,
+.user-form {
+  font-family: Lato;
+  font-size: 16px;
+  color: #dddddd;
+  opacity: 0.9;
+}
+select,
+textarea {
+  padding: 10px;
+}
+.large-form {
+  width: 500px;
+  margin-bottom: 20px;
+}
+input {
+  padding: 10px;
+}
+button {
+  margin-left: 160px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 26px;
+  background-color: #e93e32;
+  opacity: 1;
+}

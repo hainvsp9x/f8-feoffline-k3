@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.nav {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #e7e7e7;
+  margin-top: 15px;
+}
+.nav ul {
+  width: 1200px;
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #f3f3f3;
+}
+.menu {
+  position: relative;
+}
+.nav ul li {
+  /* position: relative; */
+  min-width: 50px;
+  text-align: center;
+  list-style: none;
+  padding: 10px 15px;
+}
+.nav ul li:nth-child(5) {
+  margin-right: 400px;
+}
+.nav ul li:nth-child(6) {
+  padding-right: 0;
+}
+.nav ul li i {
+  padding: 0 8px;
+}
+.nav ul li a {
+  color: #878787;
+  text-decoration: none;
+}
+.nav .sub-menu {
+  display: none;
+}
+.menu-right {
+  position: absolute;
+  right: 20px;
+}
+.nav ul li:hover > a {
+  color: #fff;
+}
+.nav ul li:hover {
+  background-color: #2da5da;
+}
+.nav ul li:hover .sub-menu {
+  position: absolute;
+  top: 42px;
+  display: block;
+  width: 150px;
+  padding: 10px 0;
+  box-shadow: -3px 3px 3px 3px #666;
+  background: transparent;
+  text-align: center;
+}
+.nav ul li:hover .sub-menu li {
+  border-bottom: 1px solid #878787;
+}
+.nav ul li:hover .sub-menu li:last-child {
+  border-bottom: none;
+}

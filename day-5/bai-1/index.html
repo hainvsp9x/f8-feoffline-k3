@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title-content">Hey there</h1>
+      <p class="content">
+        <span>We'd like to hear from you.</span>Send us your message or just say
+        hy with our <br />
+        contact form or directly via phone, we love to chat
+      </p>
+      <form class="user-form">
+        <input type="text" placeholder="Your name" class="large-form" /><br />
+        <input
+          type="email"
+          placeholder="your@domain.com"
+          class="large-form"
+        /><br />
+        <input type="text" placeholder="+44001123" class="large-form" /><br />
+        <select name="subject" id="subject" class="large-form">
+          <option value="0">Subject</option>
+          <option value="1">Subject1</option>
+          <option value="2">Subject2</option>
+          <option value="3">Subject3</option>
+          <option value="4">Subject4</option>
+        </select>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          class="large-form"
+        >
+Message</textarea
+        ><br />
+        <input type="checkbox" /> Send me a copy of this message
+        <button>send</button>
+      </form>
+    </div>
+  </body>
+</html>

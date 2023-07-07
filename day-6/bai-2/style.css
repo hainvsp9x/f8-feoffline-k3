@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebf5fe;
+  color: #666666;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.content-item {
+  position: relative;
+  width: 32%;
+  background-color: #fff;
+  margin: 6px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.content-item:hover {
+  border: 1px solid #e7574c;
+}
+.content-item h2 {
+  display: inline-block;
+  margin-left: 80px;
+  color: black;
+}
+.content-item p {
+  padding: 10px 0;
+  line-height: 1.8;
+}
+.content-item i {
+  position: absolute;
+  top: 45px;
+  margin-top: -30px;
+  padding: 15px;
+  font-size: 28px;
+  border-radius: 50%;
+}
+.content-item .icon-1 {
+  background-color: #e46a69;
+  color: #fff;
+}
+.content-item .icon-2 {
+  background-color: #50a6a4;
+  color: #fff;
+}
+.content-item .icon-3 {
+  background-color: #e38c34;
+  color: #fff;
+}
+.content-item .icon-4 {
+  background-color: #4275d8;
+  color: #fff;
+}
+.content-item .icon-5 {
+  background-color: #4275d8;
+  color: #fff;
+}
+.content-item .icon-6 {
+  background-color: #739836;
+  color: #fff;
+}
+.content-item a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
