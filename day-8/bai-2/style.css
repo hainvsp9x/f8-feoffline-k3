@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+.box {
+  height: 900px;
+  background: #7e7e7e;
+  display: flex;
+}
+.box-rigth {
+  width: 70%;
+  height: auto;
+}
+.box-left {
+  width: 30%;
+  background: #fff;
+}
+.header {
+  background: #f4f4f4;
+  padding: 15px;
+  position: relative;
+}
+.header .close,
+.header .number {
+  position: absolute;
+}
+.header .number {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  top: 12px;
+  left: 170px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 50%;
+  background: #4060f3;
+}
+.header .close {
+  top: 12px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #eb5a2c;
+}
+.cart-item {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  margin: 20px 0;
+}
+.cart-item span {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #7d7d7d;
+}
+.image-product img {
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.description h3 {
+  color: #7d7d7d;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.description p {
+  display: inline-block;
+}
+.des-number {
+  padding: 3px 20px;
+  border: 1px solid #7d7d7d;
+  border-radius: 50px;
+}
+.description .price {
+  margin-left: 80px;
+  font-weight: 900;
+}
+.Subtotal {
+  padding: 20px;
+}
+.Subtotal h2 {
+  display: inline-block;
+  margin-right: 240px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.Subtotal span {
+  color: #eb5a2c;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Subtotal p {
+  font-size: 10px;
+  color: #7d7d7d;
+  padding-bottom: 10px;
+}
+button {
+  display: block;
+  width: 100%;
+  outline: 0;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.Subtotal .view-cart {
+  background-color: #fff;
+  border: 1px solid #7d7d7d;
+  border-radius: 5px;
+}
+.Subtotal .add-cart {
+  background-color: #4060f3;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+.Subtotal h2 {
+  width: 100%;
+  font-size: 16px;
+}
