@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+:root {
+  --container-width: 1326px;
+  --column-spacing: 20px;
+  --column-small-spacing: 10px;
+  --column-max: 12;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}

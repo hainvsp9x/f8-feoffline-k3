@@ -1,0 +1,17 @@
+@mixin container {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@mixin column($name: "") {
+  $prefix: "col";
+  @if ($name != "") {
+    $prefix: #{$prefix} + #{$name};
+  }
+  @for $i from 1 through 12 {
+    .#{$prefix}-#{$i} {
+      --column-size: #{$i};
+    }
+  }
+}
