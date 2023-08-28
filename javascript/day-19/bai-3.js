@@ -5,10 +5,10 @@ var arr3 = [
 var newArr3 = [];
 var result = [[], [], []];
 
-arr3.filter(function (value) {
+var arr34 = arr3.filter(function (value) {
   return (newArr3 = newArr3.concat(value));
 });
-result.filter(function (item) {
+arr34.filter(function (item) {
   if (typeof item === "string") {
     result[0].push(item);
   } else if (typeof item === "number") {
