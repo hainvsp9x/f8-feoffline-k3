@@ -21,3 +21,14 @@ var price2 = 12000000000;
 console.log(price.getCurrency());
 console.log(price2.getCurrency());
 console.log(price.toLocaleString("vi-VN"));
+
+Object.prototype.getCurrency = function (unit) {
+  const num = parseFloat(this)
+  if (isNaN(num)) {
+    return "Invalid number"
+  }
+  return num.toLocaleString("en") + " " + unit
+}
+
+var price = 120000000000
+console.log(price.getCurrency("đ"))

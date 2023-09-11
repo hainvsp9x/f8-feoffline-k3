@@ -58,20 +58,19 @@ var result = [];
 var child = "";
 function chil(arr, symb) {
   arr.forEach(function (obj) {
-    obj.push(symb, obj.name)
-    if(obj.children) {
-      chil(obj.children, s)
+    result.push(symb + obj.name);
+    if (obj.children) {
+      chil(obj.children, symb + symb);
     }
-    
-  }); 
-
-  
-
+  });
 }
 categories.forEach(function (obj) {
-  result[result.length] = obj.name
+  result[result.length] = obj.name;
   if (obj.children) {
     chil(obj.children, "--|");
   }
+});
+
+categories.map(function() {
+  
 })
-cate(categories);

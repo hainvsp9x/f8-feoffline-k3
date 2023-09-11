@@ -1,9 +1,11 @@
 Array.prototype.filter2 = function (callback) {
   let output = [];
   for (var index in this) {
-    var result = callback(this[index], index, this);
-    if (result) {
-      output.push(this[index]);
+    if (this.hasOwnProperty(index)) {
+      var result = callback(this[index], index, this);
+      if (result) {
+        output[output.length] = this[index];
+      }
     }
   }
   return output;
