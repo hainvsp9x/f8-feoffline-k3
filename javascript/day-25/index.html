@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <button class="btn-main">Đăng nhập</button>
+    </div>
+    <!-- begin modal -->
+    <div class="modal js-modal hide">
+      <div class="modal-container js-modal-container">
+        <div class="modal-header">
+          <button class="btn-header js-btn-login active">Đăng nhập</button>
+          <button class="btn-header js-btn-register">Đăng ký</button>
+        </div>
+        <!-- begin form login -->
+        <div class="modal-form-login js-form-login hide">
+          <div class="body-head center">
+            <p class="title-login">với các tài khoản mạng xã hội</p>
+            <div class="icon">
+              <a href="" class="icon-google"
+                ><i class="fa-brands fa-google"></i> Google</a
+              >
+              <a href="" class="icon-facebook"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </div>
+            <p>---------------hoặc-----------------</p>
+          </div>
+          <div class="modal-form">
+            <div class="form-group">
+              <div>
+                <label for="">Email</label>
+              </div>
+              <input type="email" id="email" placeholder="Email" required />
+              <span id="email_error"></span>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="">Mật khẩu</label>
+              </div>
+              <input
+                type="password"
+                id="password"
+                placeholder="Mật khẩu"
+                required
+              />
+              <span id="password_error"></span>
+            </div>
+            <div class="form-bottom">
+              <p class="forgot-pass rigth">Quên mật khẩu?</p>
+              <button class="btn-login">Đăng Nhập</button>
+            </div>
+          </div>
+        </div>
+        <!-- end form login -->
+        <!-- begin form register -->
+        <div class="modal-form-register js-form-register hide">
+          <p class="title-register center">
+            Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+          </p>
+          <div class="modal-form">
+            <div class="form-group">
+              <div>
+                <label for="">Họ và tên</label>
+              </div>
+              <input type="text" id="name" placeholder="Họ và tên" required />
+              <span id="name_error"></span>
+            </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="email" id="email" placeholder="Email" required />
+              <span id="email_error"></span>
+            </div>
+            <div class="form-group">
+              <label for="">Mật khẩu</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Mật khẩu"
+                required
+              />
+              <span id="password_error"></span>
+            </div>
+            <p class="rules">
+              Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+              <a href=""> điều kiện về qui định và chính sách của Dân trí</a>
+            </p>
+            <button class="btn-login">Đăng Ký</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
