@@ -26,7 +26,7 @@ btnShow.addEventListener("click", showModal);
 modal.addEventListener("click", hideModal);
 
 modalContainer.addEventListener("click", function (e) {
-  e.stopPropagation();
+  // e.stopPropagation();
 });
 btnRegister.addEventListener("click", function () {
   btnLogin.classList.remove("active");
