@@ -57,12 +57,14 @@ dots.forEach(function (dot, index) {
         dot.classList.remove("active");
       }
     });
-    console.log(typeof carouselItems);
     var indexImg = 0;
-    var itemImgs = Object.keys(carouselItems);
-    console.log(typeof itemImgs);
+    var itemImgs = Array.from(carouselItems).forEach(function (index) {
+      indexImg = index;
+    });
+    console.log(indexImg);
 
     dot.classList.add("active");
-    var currentIndex = dots[index];
+    var currentIndex = dot[index];
+    // indexImg = currentIndex + position;
   });
 });

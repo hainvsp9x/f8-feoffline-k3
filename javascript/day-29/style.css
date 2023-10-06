@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cart,
+footer,
+.title {
+  padding: 15px;
+  padding-left: 5px;
+}
+table {
+  margin: 8px;
+}
+.cart-del {
+  width: 50px;
+}
+.add-cart {
+  width: 100%;
+}
+td {
+  text-align: center;
+}
+.btn-add-cart {
+  width: 100%;
+}
