@@ -166,7 +166,6 @@ datas.forEach(function (data) {
     divItem.innerText = item;
     divItem.prepend(textNodeItem);
     numItem++;
-
     list.append(divItem);
   });
 });
