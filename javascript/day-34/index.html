@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to right, #55c88b, #2e8b57);
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        /* border: 1px solid #000; */
+        background: url(miranda.jpg);
+        background-size: 100% 100%;
+        position: absolute;
+        overflow: hidden;
+      }
+      #first {
+        top: 50%;
+        left: 20%;
+        transform: translateY(-50%);
+      }
+      #first:hover + #second {
+        display: block;
+      }
+      #second {
+        background-size: 600% 600%;
+        top: 50%;
+        left: 40%;
+        transform: translateY(-50%);
+        display: none;
+      }
+      #lens {
+        width: 80px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        border: 3px solid #00b050;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <span id="lens"></span>
+    </div>
+    <div id="second"></div>
+    <script type="text/javascript">
+      var lens = document.getElementById("lens");
+      var first = document.getElementById("first");
+      var second = document.getElementById("second");
+
+      first.addEventListener("mousemove", function (e) {
+        var x = e.clientX - e.target.offsetLeft;
+        var y = e.clientY - e.target.offsetTop;
+
+        lens.style.display = "block";
+        lens.style.left = x + "px";
+        lens.style.top = y + 150 + "px";
+
+        second.style.backgroundPosition =
+          (x - 300 / 2 / 6) * -6 + "px" + (y - 300 / 2 / 6 + 150) * -6 + "px";
+      });
+      first.addEventListener("mouseout", function () {
+        lens.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
