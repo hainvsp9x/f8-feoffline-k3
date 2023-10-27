@@ -70,8 +70,9 @@ const products = document.querySelector(".list-product");
 //   </div>
 //     `;
 // });
-products.innerHTML = datas.map((data) => {
-  return `
+products.innerHTML = datas
+  .map((data) => {
+    return `
     <div class="product-item">
     <div class= "image">
         <img src="${data.img}" alt="" />
@@ -90,4 +91,5 @@ products.innerHTML = datas.map((data) => {
         </div>
     </div>
     `;
-});
+  })
+  .join("");
